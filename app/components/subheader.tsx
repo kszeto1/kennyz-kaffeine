@@ -24,8 +24,8 @@ export default function SubHeader() {
         }
     ]
     return (
-        <div className="p-4 m-4">
-            <ul className="flex flex-row gap-4 font-semibold text-sm">
+        <div className="flex p-6 m-0 bg-[#fafafa] border-y-2 border-brown-300">
+            <ul className="flex flex-row gap-8 font-semibold text-sm">
                 {navItems.map((item) => {
                     return (
                         <li key={item.title}>
