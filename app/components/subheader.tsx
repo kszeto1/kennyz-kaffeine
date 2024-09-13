@@ -1,13 +1,15 @@
-'use client';
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 import FilteredProductList from "../products/FilteredProductList";
 import dynamic from "next/dynamic";
 
-const FilteredProductListWrapper = dynamic(() => import('./FilteredProductListWrapper'), {
+const FilteredProductListWrapper = dynamic(
+  () => import("./FilteredProductListWrapper"),
+  {
     ssr: false,
-    loading: () => <p>Loading...</p>
-  });
+  }
+);
 
 export default function SubHeader() {
   const [selectedCategory, setSelectedCategory] = useState("coffee");

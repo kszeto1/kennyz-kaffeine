@@ -31,7 +31,7 @@ export default async function FilteredProductList({
   );
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 min-h-screen">
       <div className="flex flex-wrap -mx-4">
         {filteredProducts.map((product: Product) => (
           <div key={product.id} className="w-full">
