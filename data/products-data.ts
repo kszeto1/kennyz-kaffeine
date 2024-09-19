@@ -555,7 +555,7 @@ const products = [
                 
             },
             {
-                subCategory: "Mugs &amp; Travelers",
+                subCategory: "Mugs & Travelers",
                 items: [
                     {
                         name: "Created Co Tumbler",
