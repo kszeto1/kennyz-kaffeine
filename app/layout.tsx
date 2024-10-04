@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import MainContent from './components/MainContent'
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
@@ -38,13 +39,14 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" type="application/manifest+json" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={inter.className}>
         <Header />
-        <SubHeader />
-        {children}
+        <MainContent>{children}</MainContent>
         <Footer />
       </body>
+
     </html>
   );
 }

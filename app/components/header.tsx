@@ -1,5 +1,6 @@
 import Link from "next/link";
-
+// import { notFound } from "next/navigation";
+import NotFound from "../not-found";
 export default function Header() {
   const navItems = [
     {
@@ -20,7 +21,7 @@ export default function Header() {
     },
     {
       title: "About",
-      href: "/About",
+      href: "/about",
     },
     {
       title: "News",
