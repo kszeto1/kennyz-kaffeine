@@ -8,14 +8,10 @@ const validRoutes = ['/']
 export default function MainContent({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
 
-  if (validRoutes.includes(pathname)) {
-    return (
-      <>
-        <SubHeader />
-        {children}
-      </>
-    )
-  }
-
-  return <>{children}</>
+  return (
+    <main className="w-full">
+      {validRoutes.includes(pathname) && <SubHeader />}
+      {children}
+    </main>
+  )
 }
