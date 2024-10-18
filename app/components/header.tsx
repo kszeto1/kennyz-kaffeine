@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <header className="w-full px-4 py-2 m-0 font-semibold text-base">
       <div className="flex items-center justify-between md:justify-start">
-        <Link href="/" className="flex flex-row items-center pr-4">
+        <Link href="/" className="flex flex-row items-center pr-4" scroll={false}>
           Kennyz
           <img src="/coffee.png" alt="logo" className="w-16" />
           Kaffeine
@@ -51,7 +51,7 @@ export default function Header() {
           <ul className="flex flex-row gap-7">
             {navItems.map((item) => (
               <li key={item.title}>
-                <Link href={item.href}>{item.title}</Link>
+                <Link href={item.href} scroll={false}>{item.title}</Link>
               </li>
             ))}
           </ul>

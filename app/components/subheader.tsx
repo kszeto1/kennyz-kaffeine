@@ -48,6 +48,7 @@ export default function SubHeader() {
             <li key={item.title}>
               <Link
                 href={item.href}
+                scroll={false}
                 onClick={() => handleCategoryClick(item.title.toLowerCase())}
               >
                 {item.title}
