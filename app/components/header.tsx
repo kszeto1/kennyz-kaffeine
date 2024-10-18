@@ -38,7 +38,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full px-4 py-2 m-0 font-semibold text-base">
+    <header className="w-full px-4 py-2 m-0 font-semibold text-base border-b-2 border-brown-300">
       <div className="flex items-center justify-between md:justify-start">
         <Link href="/" className="flex flex-row items-center pr-4" scroll={false}>
           Kennyz
