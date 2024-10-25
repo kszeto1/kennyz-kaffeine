@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { Suspense, use, useState } from "react";
 import FilteredProductList from "../products/FilteredProductList";
 import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 
 const FilteredProductListWrapper = dynamic(
   () => import("./FilteredProductListWrapper"),
@@ -13,6 +14,8 @@ const FilteredProductListWrapper = dynamic(
 
 export default function SubHeader() {
   const [selectedCategory, setSelectedCategory] = useState("coffee");
+  const pathname = usePathname();
+
   const navItems = [
     {
       title: "Coffee",
@@ -57,7 +60,9 @@ export default function SubHeader() {
           ))}
         </ul>
       </div>
-      <FilteredProductListWrapper category={selectedCategory} />
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
+      {pathname === "/" && <FilteredProductListWrapper category={selectedCategory} />}
+      {/* </Suspense> */}
     </>
   );
 }

@@ -13,27 +13,27 @@ export default function Header() {
     },
     {
       title: "Shop",
-      href: "/shop",
+      href: "/custom-404",
     },
     {
       title: "Subscriptions",
-      href: "/subscriptions",
+      href: "/custom-404",
     },
     {
       title: "Locations",
-      href: "/locations",
+      href: "/custom-404",
     },
     {
       title: "About",
-      href: "/about",
+      href: "/custom-404",
     },
     {
       title: "News",
-      href: "/news",
+      href: "/custom-404",
     },
     {
       title: "Join Kennyz",
-      href: "/join-kennyz",
+      href: "/custom-404",
     },
   ];
 
