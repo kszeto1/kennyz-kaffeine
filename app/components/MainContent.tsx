@@ -10,11 +10,11 @@ export default function MainContent({ children }: { children: React.ReactNode })
   const pathname = usePathname()
 
   return (
-    // <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>Loading...</div>}>
     <main className="w-full">
       {validRoutes.includes(pathname) && <SubHeader />}
       {children}
     </main>
-    // </Suspense>
+    </Suspense>
   )
 }

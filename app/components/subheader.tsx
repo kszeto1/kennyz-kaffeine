@@ -60,9 +60,9 @@ export default function SubHeader() {
           ))}
         </ul>
       </div>
-      {/* <Suspense fallback={<div>Loading...</div>}> */}
+      <Suspense fallback={<div>Loading...</div>}>
       {pathname === "/" && <FilteredProductListWrapper category={selectedCategory} />}
-      {/* </Suspense> */}
+      </Suspense>
     </>
   );
 }

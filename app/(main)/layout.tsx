@@ -40,9 +40,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {/* <Suspense fallback={<Loading />}> */}
+        <Suspense fallback={<Loading />}>
           <MainContent>{children}</MainContent>
-        {/* </Suspense> */}
+        </Suspense>
         <Footer />
       </body>
     </html>
